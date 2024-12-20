@@ -28,7 +28,7 @@ function Gallery() {
         const datar = async () => {
             await axios({
                 method: 'get',
-                url: "https://ahiajoku-backend-web.onrender.com/gallery",
+                url: "https://api.ahiajoku.im.gov.ng/gallery",
                 headers: {
                     "Content-Type" : "application/json",
                     "Authorization" : token
@@ -52,7 +52,7 @@ function Gallery() {
 
         axios({
             method: 'post',
-            url: 'https://ahiajoku-backend-web.onrender.com/gallery',
+            url: 'https://api.ahiajoku.im.gov.ng/gallery',
             headers: {
                 "Content-Type": "multipart/form-data",
                 "Authorization": token

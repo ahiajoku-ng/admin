@@ -32,7 +32,7 @@ function Lecturers() {
         const datar = async () => {
             await axios({
                 method: 'get',
-                url: "https://ahiajoku-backend-web.onrender.com/lecturers",
+                url: "https://api.ahiajoku.im.gov.ng/lecturers",
                 headers: {
                     "Content-Type" : "application/json",
                     "Authorization" : token
@@ -55,7 +55,7 @@ function Lecturers() {
 
         axios({
             method: 'post',
-            url: 'https://ahiajoku-backend-web.onrender.com/lecturers',
+            url: 'https://api.ahiajoku.im.gov.ng/lecturers',
             headers: {
                 "Content-Type": "multipart/form-data",
                 "Authorization": token
